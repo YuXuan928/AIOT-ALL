@@ -1,0 +1,13 @@
+{
+  "python.pythonPath": "/home/使用者名稱/.virtualenvs/ai/bin/python",
+  "python.defaultInterpreterPath": "/home/使用者名稱/.virtualenvs/ai/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "cursorpyright.analysis.autoImportCompletions": true,
+  "cursorpyright.analysis.typeCheckingMode": "basic"
+}

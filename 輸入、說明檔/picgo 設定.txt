@@ -1,0 +1,6 @@
+//============== PICGO 設定 =====================//
+  "picgo.picBed.current": "github",
+  "picgo.picBed.github.branch": "main",
+  "picgo.picBed.github.repo": "owner/pic",
+  "picgo.picBed.github.token": "xxxxxxxxxxxxxxxxxxx",
+  "picgo.picBed.github.path": "pic/",

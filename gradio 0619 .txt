@@ -1,0 +1,26 @@
+import gradio as gr
+
+# 模擬帳號密碼資料庫
+users = {
+    "allen": "1234",
+    "rain": "5678",
+    "yuxuan": "abcd"
+}
+
+def login(username, password):
+    if username in users and users[username] == password:
+        return f"歡迎 {username} 會員你好"
+    else:
+        return "帳密錯誤"
+
+demo = gr.Interface(
+    fn=login,
+    inputs=[
+        gr.Textbox(label="帳號"),
+        gr.Textbox(label="密碼", type="password")
+    ],
+    outputs="text",
+    title="會員登入系統"
+)
+
+demo.launch(share=True)

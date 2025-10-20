@@ -1,0 +1,10 @@
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "editor.formatOnSave": false
+
+
+然後到settings 搜尋 format
+把 format on save打勾

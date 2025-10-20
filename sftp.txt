@@ -1,0 +1,23 @@
+{
+    "name": "桌機",
+    "host": "wk.test",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "allen",
+    "remotePath": "C:/workspace/python",
+    "privateKeyPath": "/home/allen/.ssh/id_rsa",
+    "uploadOnSave": false,
+    "useTempFile": false,
+    "syncMode": "update",
+    "openSsh": false,
+    "ignore": [
+      "**/.vscode/**",
+      "**/.git/**",
+      "**/.DS_Store"
+    ],
+    "watcher": {
+      "files":"**/*",
+      "autoUpload": false,
+      "autoDelete": false
+    }
+}

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "停止 MariaDB..."
+sudo systemctl stop mariadb
+
+echo "移除 MariaDB 與舊資料..."
+sudo apt purge mariadb-server mariadb-client mariadb-common -y
+sudo rm -rf /var/lib/mysql
+sudo rm -rf /etc/mysql
+
+echo "更新套件列表並重新安裝 MariaDB..."
+sudo apt update
+sudo apt install mariadb-server mariadb-client -y
+
+echo "啟動 MariaDB..."
+sudo systemctl start mariadb
+
+echo "檢查 MariaDB 狀態..."
+sudo systemctl status mariadb --no-pager
+
+echo "匯入備份資料..."
+sudo mysql < ~/backup.sql
+
+echo "設定 root 密碼（請自行修改下面指令內密碼）..."
+sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'your_new_password'; FLUSH PRIVILEGES;"
+
+echo "完成！請確認服務狀態與資料。"
