@@ -1,6 +1,0 @@
-OLLAMA_HOST   8888
-OLLAMA_MODELS V:\models\ollama
-OLLAMA_ORIGINS *
-
-
-預設pull number 11434
